@@ -1,0 +1,193 @@
+
+\chapter{Introduzione allo studio delle Macchine a Fluido}
+
+Le macchine a fluido si dividono in due grandi famiglie
+\begin{itemize}
+\item Dinamiche, come compressori e turbine, a flusso continuo
+
+\item Volumetriche, come i motori a combustione interna o pompe e compressori,
+il lavoro è svolto mediante una variazione di volume
+\end{itemize}
+
+Le macchine si suddividono ulteriormente in:
+\begin{itemize}
+\item Macchine motrici
+\item Macchine operatrici
+\end{itemize}
+ e ancora in
+\begin{itemize}
+\item Macchine termiche (IMT)
+\item Macchine idrauliche
+\end{itemize}
+
+Nelle macchine termiche è sempre presente un ciclo termodinamico, del calore
+che riduce sempre i rendimenti, nelle macchine idrauliche invece, lavorando ``a
+freddo'' l'energia restituita è quasi interamente pari a quella fornita dal
+fluido.
+
+Rispetto alla direzione del moto del fluido si parlerà di macchine
+\begin{itemize}
+\item Assiali
+\item Radiali
+\item A flusso misto
+\end{itemize}
+
+Mediante l'equazione di Eulero è possibile...
+
+\section{Macchine termiche}
+La macchina termica non è l'impianto termico,
+Esempio con gruppo turbogas
+%Inserisci immagine turbogas
+
+Il generatore è posizionato solitamente vicino al compressore e non alla
+turbina per le più basse temperature, a meno che la turbina non sia
+multiassiale.
+
+Il moto del fluido può essere stazionario come ad esempio in una turbina, il
+flusso è continuo, in realtà è un'approssimazione; oppure in un flusso non
+stazionario come in un motore a combustione interna.
+
+Alcuni fluidi sono comprimibili o lo sono talmente poco da essere ritenuti
+incomprimibili.
+
+Un fluido può essere viscoso o non viscoso
+
+Nel caso di grossi impianti le turbine possono essere simmetriche, disposte su
+due lati come se fossero due turbine collegate.
+
+Gli impianti motore termici possono essere
+\begin{itemize}
+ \item Impianti a vapore; 2MW - 1000MW
+ \item Turbina a gas; 18kW - 500MW
+ \item Motori a combustione interna; 0.1kW - 90MW
+ \item Impianti combinati (gas-vapore); $>$ 1000MW
+\end{itemize}
+
+Le grandezze in ingresso sono calore (kW), in uscita potenza meccanica (kW).
+
+Le turbine idrauliche hanno invece potenze medie superiori a 100MW.
+
+
+Formula del rendimento di un ciclo combinato, alla potenza della turbina a gas
+si aggiunge la potenza della turbina a vapore:
+\begin{equation}
+\eta_g = \frac{L_u}{m_c\cdot H_i} =\frac{P_u}{\dot{m}_c \cdot H_i} =
+\frac{P+P_{TV}}{\dot{m}_f H_i}
+\end{equation}
+
+Si ricorda la definizione di portata massica
+\begin{equation}
+\dot{m}_c = \frac{dm_c}{dt}
+\end{equation}
+
+In passato le temperature massime erano limitate dai materiali della turbina,
+non c'era abbastanza calore residuo per alimentare la turbina a vapore, per
+questo motivo non si realizzavano cicli combinati.
+
+Il rendimento di un impianto è spesso inferiore se l'impianto non lavora a
+massima potenza.
+Un ulteriore limite della turbina a gas è la temperatura di ingresso dell'aria,
+può essere a volte comodo raffreddare inizialmente l'aria d'ingresso al
+compressore.
+
+In un gruppo turbogas, solitamente la turbina ha meno stadi, il compressore
+deve eseguir un lavoro ``forzato'' contro la tendenza naturale dell'aria ad
+espandere, sono necessari più stadi.
+Nella turbina il gas espande, avverrebbe anche in maniera naturale, non è
+dunque necessario un elevato numero di stadi.
+%museo tecnico Spira germania
+
+Rendimento di un impianto idraulico
+\begin{equation}
+ \eta_G = \frac{P}{\rho\cdot g \cdot h \cdot Q}
+\end{equation}
+$Q$ è la portata volumetrica, $\rho$ è la densità e $h$ è l'altezza geodetica.
+
+L'energia prodotta in un impianto sarà l'integrale della potenza, oppure il
+prodotto tra la potenza e il fattore di utilizzo $f$
+\begin{equation}
+ E_{kWh} = \int_0^T P_{\text{effettiva}} dt = f\cdot P_n \cdot T
+\end{equation}
+
+\section{Cicli termodinamici}
+I cicli possono essere suddivisi in reali e ideali
+VEDI TABELLA SLIDE
+
+In un ciclo ideale si effettua una trasformazione isoentropica, ad entropia
+costante, in caso contrario si sta riducendo energia meccanica, ovvero si
+distrugge l'\textit{exergia}, con conseguente produzione di entropia.
+
+Consumo specifico di calore
+\begin{equation}
+ C_s = \frac{1}{\eta_G} = \frac{m_c\cdot H_i}{L_u}
+\end{equation}
+
+VEDI SIDE CON I RENDIMENTI
+
+Aggiungi rendimento di combustione
+
+Per disegnare un ciclo termodinamico si rappresentano prima le due isobare
+divergenti, poi si congiungono i punti con le trasformazioni, il calore di
+adduzione, caratteristica del ciclo termodinamico, risente di tutto il ciclo e
+ ne influisce il rendimento
+
+Potere calorifico inferiore
+
+Non si usa praticamente mai il potere calorifico superiore
+
+
+Definizioni di DOSATURA
+\begin{itemize}
+ \item Rapporto aria / combustibile $ \alpha = \frac{m_a}{m_f}$
+ \item Rapporto combustibile / aria $ f= \frac{m_f}{m_a} = \frac{1}{\alpha} $
+ \item Rapporto di equivalenza $\varphi = \frac{f}{f_{st}} =
+\frac{\alpha_{st}}{\alpha} \left\{
+\begin{aligned}
+>1\ & \text{Eccesso di combustibile}\\
+=1\ & \text{Stechiometrico}\\
+<1\ & \text{Eccesso di aria}
+\end{aligned}\right.$
+\end{itemize}
+
+$\alpha_{st}$ è il rapporto aria / combustibile che si ottiene in caso di
+reazione stechiometrica.
+
+Nel calcolo delle masse è necessario inserire l'azoto nella massa d'aria che ha
+un peso prevalente nella composizione dell'aria.
+
+Quando si considera il metano come combustibile non bisognerebbe assumere il
+metano come elemento singolo mentre il gas naturale realmente utilizzato è
+solitamente composto al 90\% da metano e la restante parte da altri gas come
+butano e propano.
+
+Indice di emissione di CO2 pari al rapporto tra la massa di CO2 e la massa di
+combustibile bruciata.
+
+Oppure si può indicare l'indice di emissione moltiplicato per il consumo
+specifico ottenendo i grammi di CO2 rispetto all'energia prodotta.
+$$
+EICO_{2f} = \frac{m_{CO2}}{m_f}1000 \Rightarrow EICO_{2W} = EICO_{2f}c_{sc}
+$$
+
+L'\textit{azoto} non partecipa attivamente alla combustione, non si ossida in
+una reazione stechiometrica ma in caso di eccesso di ossigeno si ha comunque
+una ossidazione parziale dell'azoto con il rilascio dunque di sostanze
+inquinanti in atmosfera ($NO_x$).
+
+\section{Equazione di stato dei gas}
+
+$pV = nRT$
+
+Classificazione dei sistemi termodinamici
+
+
+Vedi definizione flusso stazionario slide, equazione di bilancio della massa
+ecc
+
+Nelle macchine alternative solitamente non è vero che il flusso e la portata
+siano costanti in ogni istante del ciclo.
+
+Ricorda che calore e lavoro non sono differenziali esatti!
+
+
+

@@ -1,0 +1,95 @@
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[a4paper,11pt]{book}
+\usepackage[]{geometry}
+
+\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{cancel}
+\usepackage[italian]{babel}
+\usepackage{fontenc}
+\usepackage{graphicx}
+\graphicspath{{img/}}
+\usepackage{circuitikz}
+\ctikzset{
+    resistors/scale=0.7,
+    capacitors/scale=0.7,
+    inductors/scale=0.7,
+    sources/scale=0.7
+    }
+
+\usepackage{float}
+\usepackage{xcolor}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+}
+\usepackage{arydshln} % dashed lines in matrix (array)
+
+
+
+%Definizione 'globale' larghezza immagini
+\newcommand{\picwid}{0.35\linewidth}
+\usepackage{tikz}
+\usepackage{pgfplots} % Plot dei grafici
+\pgfplotsset{compat=1.18}
+% Riduzione tempi di compilazione esternalizzando le figure in pdf separati
+\usepgfplotslibrary{external}
+%\usetikzlibrary{pgfplots.external}
+\tikzexternalize[prefix=tikz/, optimize command away=\includepdf]
+\usetikzlibrary{patterns} % libreria per disegnare i pattern
+%\tikzset{prefix={tikz/}}
+
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage{polynom}
+
+\newcommand{\Lap}{\ensuremath{\mathcal{L}}} %L di Laplace
+\renewcommand{\Re}{\ensuremath{\mathfrak{Re}}} %Parte reale
+\renewcommand{\Im}{\ensuremath{\mathfrak{Im}}} %Parte immaginaria
+
+\usepackage{diagbox} %pacchetto linea diagonale per tabelle
+\usepackage{booktabs} % toprule midrule e bottomrule
+\usepackage{steinmetz} %pacchetto per notazione angolo
+
+\usepackage{bodegraph} %pacchetto per diagrammi di Bode
+
+\date{\today}
+\title{Appunti Sistemi Energetici Innovativi}
+\author{Daniele Olivieri}
+\begin{document}
+\maketitle
+\tableofcontents
+%Vedi il libro motori di Ferrari
+\include{lezione_01}
+\include{lezione_02}
+\include{lezione_03}
+% \include{lezione_04}
+% \include{lezione_05}
+% \include{lezione_06}
+% \include{lezione_07}
+% \include{lezione_08}
+% \include{lezione_09}
+% \include{lezione_10}
+% \include{lezione_11}
+% \include{lezione_12}
+% \include{lezione_13}
+% \include{lezione_14}
+% \include{lezione_15}
+% \include{lezione_16}
+% \include{lezione_17}
+% \include{lezione_18}
+% \include{lezione_19}
+% \include{lezione_20}
+% \include{lezione_21}
+% \include{lezione_22}
+% \include{lezione_23}
+% \include{lezione_24}
+% \include{lezione_25}
+\end{document}
