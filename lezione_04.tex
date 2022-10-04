@@ -1,0 +1,84 @@
+
+\section{I cicli della turbina a gas}
+L'impianto turbogas è composto da tre componenti, compressore, camera di
+combustione e turbina, può essere presente un circuito di recupero dell'aria.
+
+Tutte le grosse macchine sono di tipo assiale multistadio, è un impianto molto
+flessibile, può lavorare con molte tipologie di combustibili diversi.
+
+Le turbine possono essere monoalbero o multialbero, la seconda configurazione
+permette al generatore elettrico di mantenere la sua velocità imposta dalla
+frequenza di rete senza rischiare di far stallare il compressore.
+Nonostante le rappresentazioni grafiche il generatore è in realtà collegato al
+compressore e non alla turbina a causa delle più basse temperature.
+
+Il ciclo è il ciclo termodinamico, il circuito rappresenta come è costruito
+l'impianto.
+Alcuni impianti a circuito chiuso possono utilizzare l'elio anziché l'aria.
+Il compressore va regolarmente lavato, sia durante il funzionamento che durante
+manutenzioni straordinarie, questo per preservare le prestazioni dell'impianto.
+
+I lavori specifici di un impianto turbogas sono comunque solitamente molto
+bassi con l'aria, per questo può essere comodo cambiare il fluido dell'impianto
+ed utilizzare ad esempio l'elio. Il compressore ad esempio assorbe gran parte
+del lavoro prodotto dalla turbina, rispetto ad una pompa presente in un
+impianto a vapore, utilizzando l'interrefrigerazione è possibile ridurre il
+lavoro del compressore.
+
+
+\subsection{Grandezze caratteristiche}
+\begin{itemize}
+ \item Rapporto di compressione $\beta = \frac{p_2}{p_1} = \frac{p_3}{p_4}$
+ \item Rapporti di temperature $\theta = \frac{T_3}{T_1}$ rapporto tra la
+massima e minima temperatura
+\end{itemize}
+Se si considera un ciclo ideale si può utilizzare l'equazione di stato dei gas
+$$
+\frac{p}{\rho} = RT
+$$
+
+Se il gas è ideale i calori specifici sono costanti, dipendono da $R$ e $k$,
+$k=\frac{c_p}{c_v}$ è l'esponente dell'adiabatica, dipende dal gas in uso,
+mentre $R=c_p-c_v$
+
+Per il calcolo del salto entalpico si usa la seguente relazione
+$$
+\Delta h = Q - L = cp\Delta T
+$$
+
+
+Il ciclo ideale è quello di riferimento, tutte le trasformazioni adiabatiche
+sono legate da
+$$
+\frac{dp}{dv} = -j \frac{v}{?}
+$$
+
+%Inserisci il lavoro di compressione.
+$$
+|L_C|= d\int_1^2 VDP = \frac{k}{k-1}1V_1(\beta^\lambda
+-1)
+$$
+
+L'adduzione del calore durante la combustione invece
+$$
+L_t = \int_3^4 = \frac{k}{k-1z}p_3v
+$$
+
+La temperatura media di un impianto turbogas è relativamente alta mentre la
+temperatura di sottrazione non è facilmente modificabile, dipende dalla
+temperatura ambiente ma dipende dalla temperatura di scarico dei gas combusti,
+solitamente anche a $500^\circ$
+
+
+Il lavoro utile è dato dalla differenza tra il lavoro prodotto dalla turbina e
+quello assorbito dal compressore.
+
+Il rendimento è funzione solo di $\beta$ nel ciclo ideale, solitamente però il
+rapporto $\beta$ dipende dal tipo di applicazione.
+
+Se si usa un impianto a circuito chiuso con elio si massimizza il lavoro con
+una macchina più piccola, con rapporto di compressione inferiore.
+
+Il $C_p$ dell'aria è solitamente circa 1, in realtà per la turbina il $C_p$ dei
+gas esausti è solitamente maggiore.
+
