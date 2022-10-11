@@ -21,12 +21,12 @@ cp = 1.10; %kJ/kgK
 R = 0.287; %kJ/kgK
 
 %% Punto 1
-%s(1) = refpropm('S','T',T(1), 'P',p(1)*100, 'air.mix')*1e-3;
+s(1) = refpropm('S','T',T(1), 'P',p(1)*100, 'AIR.MIX')*1e-3;
 
 %airTables = twoPhaseFluidTables([25,4000],[0.01,15],25,25,60,...
 %'air','/home/daniele/.wine/drive_c/Program Files/REFPROP/')
 
-s(1) = 6.86;
+%s(1) = 6.86;
 %% Punto 2
 p(2) = beta*p(1);
 T(2) = T(1)*beta^lambda; % Isoentropica
