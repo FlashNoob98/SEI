@@ -1,0 +1,75 @@
+
+Per capire se una macchina è di grossa potenza si capisce dalla camera di
+combustione, se fosse una turbina aeronautica dovrebbe essere a sezione
+inferiore, il combustore si dice interno, altrimenti con combustore ad anello
+la turbina non può essere aeronautica.
+
+\section{Rigenerazione}
+La turbina ha un lavoro utile relativamente basso a causa della potenza
+necessaria a muovere il compressore.
+
+Si innalza la pressione allo scarico della turbina se si aggiunge il
+rigeneratore, si parla di contropressione allo scarico, dunque l'espansione
+avviene in un salto entalpico inferiore, dunque si riduce leggermente la
+potenza alla turbina. In impianti più complessi gli scambiatori possono essere
+molteplici.
+La temperatura del flusso in uscita è ancora rilevante, viene sfruttata per
+riscaldare l'aria in uscita dal compressore, preriscaldando il flusso prima
+della camera di combustione, dunque si risparmia combustibile, ovvero la Q_1 di
+adduzione del calore.
+
+Rendimento con rigenerazione, se la temperatura allo scarico della turbina è
+molto più alta di quella dello scarico del compressore si può avere
+interrefrigerazione.
+Il rapporto $\beta$ massimo che massimizza il lavoro è pari a quello che si
+otterrebbe con le temperatura $T2=T4$.
+
+L'area sottesa alla curva $4r-r$ rappresenta il calore fornito dai gas caldi al
+gas in camera combustione,
+$Q_1=C_p(T_3-T_{2R})$
+La temperatura di adduzione inoltre è aumentata.
+
+
+
+Riducendo Beta (riducendo la taglia della turbina) invece si aumenta la
+temperatura,
+
+$$
+\eta_d = 1- \frac{1}{\beta^\lambda}
+$$
+
+
+Calore recuperato
+$$
+|Q_{2r}| = C_p(T_4-T_r)
+$$
+
+
+Rendimento ideale del ciclo con rigenerazione:
+$$
+\eta_{id} \frac{L}{(Q_1)}
+$$
+
+Ha senso fare la rigenerazione con valori di $\beta$ piccoli, quindi macchine
+piccole, va calcolato il $\beta$ massimo che massimizza il lavoro, se il
+rapporto fosse superiore a questo valore si evita la rigenerazione.
+
+
+
+\section{Interrefrigerazione}
+Si utilizza questa tecnica per ridurre il lavoro specifico assorbito dal
+compressore, spezzando la compressione tra macchine successive.
+Viene chiamato anche intercooler lo scambiatore posto tra i due compressori,
+viene utilizzato un fluido esterno come l'acqua per raffreddare l'aria un
+uscita dal primo compressore.
+
+Con l'interrefrigerazione si è ridotto il lavoro richiesto per la compressione,
+il rendimento però è peggiorato, è necessario fornire più calore per riscaldare
+il fluido fino al punto 3, per questo motivo può essere utile utilizzare la
+rigenerazione e recuperare il calore della turbina per aumentare il rendimento,
+il punto 2 infatti si trova ora molto più in basso rispetto al punto 4.
+
+Nel ciclo reale, il ciclo aggiuntivo dovuto all'interrefrigerazione è uno
+pseudo ciclo, ha la curva di raffreddamento ad entropia negativa, aumenta
+dunque il rendimento, è come se fosse un ciclo ideale deformato.
+
