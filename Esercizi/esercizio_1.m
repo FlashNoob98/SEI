@@ -21,10 +21,12 @@ cp = 1.10; %kJ/kgK
 R = 0.287; %kJ/kgK
 
 %% Punto 1
+
 %refpropm = @py.CoolProp.CoolProp.PropsSI;
-refpropm = CoolProp2Refprop;
-s(1) =refpropm('S','T',T(1), 'P',p(1)*100, 'Air')*1e-3;
-%pyenv('Version','/bin/python3.9'); %Run at startup
+
+s(1) = refpropm('S','T',T(1), 'P',p(1)*100, 'AIR.MIX')*1e-3;
+
+
 
 %s(1) = 6.86;
 %% Punto 2
