@@ -21,10 +21,12 @@ cp = 1.10; %kJ/kgK
 R = 0.287; %kJ/kgK
 
 %% Punto 1
+
+%refpropm = @py.CoolProp.CoolProp.PropsSI;
+
 s(1) = refpropm('S','T',T(1), 'P',p(1)*100, 'AIR.MIX')*1e-3;
 
-%airTables = twoPhaseFluidTables([25,4000],[0.01,15],25,25,60,...
-%'air','/home/daniele/.wine/drive_c/Program Files/REFPROP/')
+
 
 %s(1) = 6.86;
 %% Punto 2
