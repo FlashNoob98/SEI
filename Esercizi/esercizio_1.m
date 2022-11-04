@@ -27,7 +27,6 @@ R = 0.287; %kJ/kgK
 s(1) = refpropm('S','T',T(1), 'P',p(1)*100, 'AIR.MIX')*1e-3;
 
 
-
 %s(1) = 6.86;
 %% Punto 2
 p(2) = beta*p(1);
